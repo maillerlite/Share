@@ -151,10 +151,11 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 <form action="https://www.facebook.com/sharer/sharer.php" method="get" target="_blank">
 <label>Favourite List Apps 
 <select name="apps" id="apps">
-				<option value="1234567890">Object via:</option>
+				<option value="">Object via:</option>
 				<option value="441830202634558">www.fox.com</option>
 				<option value="1927919413886305">www.cube.tv</option>
 				<option value="161273083968709">www.twitch.tv</option>
+				<option value="2262730110632039">www.bigo.tv</option>
 				<option value="1603079626622346">mp3.zing.vn</option>
 				<option value="156537084972880">www.king5.com</option>
 				<option value="142371818162">www.livestream.com</option>
@@ -170,11 +171,13 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 				<option value="97534753161">www.yelp.com</option>
 				<option value="210019893730">www.dropbox.com</option>
 				<option value="163114453728333">www.netflix.com</option>
+				<option value="1377263295747145">netflix.com</option>
 				<option value="277064115737714">www.uber.com</option>
 				<option value="331116490288120">www.ladbible.com</option>
 				<option value="124285848214697">drib.tech</option>
 				<option value="111239619098">bing.com</option>
 				<option value="9869919170">www.nytimes.com</option>
+				<option value="113869198637480">developers.facebook.com/videos/</option>
 				<option value="368513495882">sso.accounts.dowjones.com</option>
 				<option value="368513495882">www.wsj-prod.rpxnow.com</option>
 				<option value="103384409739156">paperlesspost.com</option>
@@ -187,11 +190,11 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 				<option value="96937694899">www.dailymotion.com</option>
 </select>
 </label>
-<label>Page URL (URL link yang mau digenerate)
-<input type="url" pattern="https?://.+" name="u" id="u" required="" placeholder="Short link URL at bitly"/>
+<label>Page URL (URL link yang akan di post)
+<input type="url" pattern="https?://.+" name="u" id="u" required="" placeholder="Link URL from branch.io"/>
 </label>
-<label>Custom image URL (URL Link Gambar)
-<input type="url" pattern="https?://.+" name="picture" id="picture" placeholder="https://images.imgbox.com/x/xx/xxx.png | Image short URL at bitly"/>
+<label>Custom image URL (URL Link Gambar | Link image don't be short)
+<input type="url" pattern="https?://.+" name="picture" id="picture" placeholder="https://images.imgbox.com/x/xx/xxx.png"/>
 </label>
 <div class="ribet">
 <label>Reload type (Type boleh default)
