@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TOOLS Bumi</title>
 
@@ -26,39 +27,11 @@ function redirectKK(e) {
 document.oncontextmenu = redirectKK;
 //]]>
 </script>
-<center>
-<strong>Mengambil token dari App sendiri.</strong>
-Copy dan paste App ID kamu, dan App Secret. Click <strong>Get my Access Token</strong>.</p>
-<form id="getToken"><label for="name">App ID:</label><input id="id" name="name" type="text" placeholder="Enter App ID here" /><label for="name"> App Secret:</label><input id="secret" name="name" type="text" placeholder="Enter App Secret here" /><input id="submit" type="submit" value="Get my Access Token" /></form>
 
-					</div><!-- .entry-content -->
-		<footer class="entry-meta">
-					</footer><!-- .entry-meta -->
-	</article><!-- #post -->
-			
-		</div><!-- #content -->
-	</div><!-- #primary -->
+<body>
+  <div id="root"></div>
+<script type="text/javascript" src="index-413a25903f35fed1da99.js"></script></body>
 
-	<script type="text/javascript">
-
-	jQuery(document).ready(function() {
-
-		var $tokenform = jQuery('#getToken');
-		
-		$tokenform.find('#submit').on('click', function(e){
-			e.preventDefault();
-
-			var app_id = $tokenform.find('#id').val(),
-				app_secret = $tokenform.find('#secret').val(),
-				url = "//smashballoon.com/wp-content/themes/smashballoon/query-access-token-2.php?id=" + app_id + "&secret=" + app_secret;
-
-			if( jQuery('#showToken').length == 0 ) $tokenform.after('<div id="showToken"><img src="https://smashballoon.com/wp-content/themes/smashballoon/img/loader-light.gif"></div>');
-			jQuery('#showToken').load(url);
-		});
-
-	});
-
-	</script></center>
 					<!-- </div> --> <!-- end .inner -->
 			</div><!-- #main .wrapper -->
 
