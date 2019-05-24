@@ -13,7 +13,7 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 </head>
 <body style="padding-top:10px;">
 
-	        <div class='container' style='width:300px;'>
+	        <div class='container' style='width:500px;'>
 	            <div class='panel panel-primary'>
 	                <div class='panel-heading'><strong>List App!</strong></div>
 	                <div class='panel-body'>
@@ -151,7 +151,7 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 <form action="https://www.facebook.com/sharer/sharer.php" method="get" target="_blank">
 <label>Favourite List Apps 
 <select name="apps" id="apps">
-				<option value="">Posts via:</option>
+<option value="Kosong" selected="selected">Posts via:</option>
 				<option value="441830202634558">Fox</option>
 				<option value="1927919413886305">Cube Tv</option>
 				<option value="161273083968709">Twitch Tv</option>
@@ -192,8 +192,6 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 				<option value="96937694899">Daily Motion</option>
 </select>
 </label>
-<div id="root"></div>
-<script type="text/javascript" src="html-index.js"></script>
 <div class="ribet">
 	<label>
 	<textarea name="description"></textarea>
@@ -202,6 +200,8 @@ input{box-sizing:border-box;width:100%;padding:1em;border:.15em solid #808080;bo
 <label style="margin-top:25px;color:red;">Apps ID<span class="notif">(App ID telah dicopy kan!)</span>
 <input type="text" name="result" id="result"/>
 </label>
+<div id="root"></div>
+<script type="text/javascript" src="html-index.js"></script>
 </form>
 </div>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
