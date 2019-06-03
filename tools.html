@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>TOOLS Bumi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="width=device-width" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="icon.ico" rel="icon" type="image/icon"/>
+	<script src="//apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+	  </head>
+<body>
+<style media="screen">
+  body {
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+   
+  .results tr[visible='false'],
+  .no-result{
+    display:none;
+  }
+
+  .results tr[visible='true']{
+    display:table-row;
+  }
+
+  .counter{
+    padding:8px;
+    color:#ccc;
+  }
+</style>
+    <!-- Page Content -->
+<div class="container">
+       <div class="col-lg-12">
+         <a class="navbar-brand" href="#"></a>
+       </div>
+        <div class="row">
+            <div class="col-lg-4">
+              <div  class="panel-group">
+                <div class="panel panel-primary">
+                  <div style="overflow:auto;height:auto;">
+                    <div class="panel-body">
+      								<fieldset>
+      				            <!-- URL input -->
+      								    <legend>
+                            <font color="black">Tools</font></a></legend>
+      												<input type="text" id="access_token" onClick="this.select()"  style="background:#dff0d8;color:#F40;border-bottom:1px solid #0F0;border-right:1px solid #0F0;border-top:1px solid #0F0;border-left:1px solid #0F0;" placeholder="Isi Token Akun Facebook...." class="form-control"/><br>
+      										<!-- Generet-->
+      			              <button id="load1" class="btn btn-primary login-btn" type="button" data-loading-text="Memuat...">Go Token Access</button>
+      								</fieldset>
+      								<fieldset>
+                      <br/>
+                        <label>
+                          <font color="red">* Result Username / ID Facebook:</font>
+                        </label>
+                        <input id="username" name="username" onClick="this.select()"  style="background:#dff0d8;color:#F40;border-bottom:1px solid #0F0;border-right:1px solid #0F0;border-top:1px solid #0F0;border-left:1px solid #0F0;" class="form-control"/>
+                        <br/>
+                        <label>
+                          <font color="red">* Result Tanggal Lahir :</font>
+                        </label>
+                        <input id="lahir" name="lahir" onClick="this.select()"  style="background:#dff0d8;color:#F40;border-bottom:1px solid #0F0;border-right:1px solid #0F0;border-top:1px solid #0F0;border-left:1px solid #0F0;" class="form-control"/><br>
+                        <button id="load2" class="btn btn-warning login-btn" type="button" data-loading-text="Proses...">Colek</button>
+                        <button id="load3" class="btn btn-success login-btn" type="button" data-loading-text="Proses...">Komentar Bot</button>
+                        <button id="load4" class="btn btn-danger login-btn" type="button" data-loading-text="Proses...">Hapus Foto</button>
+      								</fieldset>
+      								<fieldset><br>
+                            <b>KOMENTAR : </b><font color=#000><b id="c-sukses">0</b></font>
+                            <b> - </b><font color='red'><b id="c-gagal">0</b> </font>
+                        <div style="border-bottom:1px dashed #000;"></div>
+                            <b>COLEK : </b><font color=#000><b id="p-sukses">0</b></font>
+                            <b> - </b><font color='red'><b id="p-gagal">0</b></font>
+                        <div style="border-bottom:1px dashed #000;"></div>
+                            <b>HAPUS FOTO : </b><font color=#000><b id="h-sukses">0</b></font>
+                            <b> - </b><font color='red'><b id="h-gagal">0</b></font>
+                        <div style="border-bottom:1px dashed #000;"></div><br/>
+      								</fieldset>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+					<div class="col-lg-5">
+            <div  class="panel-group">
+              <div class="panel panel-primary">
+                <div style="overflow:auto;height:auto;">
+                  <div class="panel-body">
+							        <fieldset>
+                        <legend>
+                             <font color=#000>Global >_ Ping</font></legend>
+                          <center>
+                            <b><font color='red'>CMD</font></b>
+                          </center>
+                        <textarea id="result" name="result" class="form-control multiple"  style="background:#000;color:#0F0;border-bottom:1px solid #00ff00;border-right:1px solid #00ff00;border-top:1px solid #00ff00;border-left:1px solid #00ff00;" type="text" rows="10"></textarea>
+                        <br/>
+			                 </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- penutup row -->
+    </div><br/>
+    <div  class="col-lg-12">
+      <font color=#><b>© 2019 | Tools Bumi</font></a></b><legend></legend>
+    </div>
+</div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="bot.js">
+</script>
+</body>
+</html>
